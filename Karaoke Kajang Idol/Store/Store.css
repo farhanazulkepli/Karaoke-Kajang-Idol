@@ -1,0 +1,191 @@
+/* ====================================
+Navbar
+==================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+label {
+  cursor: pointer;
+}
+label:focus {
+  outline: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 240px;
+  height: 100%;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 0.35s;
+}
+.menu label.menu-toggle {
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+}
+.menu ul li > label {
+  background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
+}
+.menu ul li a, .menu ul li label {
+  display: block;
+  text-align: left;
+  padding: 0 20px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li a:hover, .menu ul li label:hover {
+background-color: #798079; 
+color: #fff;
+}
+
+/* hide inputs */
+.menu-checkbox {
+  display: none;
+}
+
+/* hide navigation icon for sublabels */
+.menu .menu label.menu-toggle {
+  background: none;
+}
+
+/* fade in checked menu */
+.menu-checkbox:checked + .menu {
+  transform: translate3d(0, 0, 0);
+}
+
+/* for show */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+#info {
+  display: table;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+#info #info-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+#info #info-content h1 {
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  font-weight: normal;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+#info #info-content h1 strong {
+  display: block;
+  font-size: 26px;
+}
+
+/* ====================================
+Body
+==================================== */
+body 
+{
+  float: left;
+  font: 16px Helvetica;
+  background-image: url("Store.jpg")
+}
+
+article {
+    background: #00ffffff;
+    width: 95%;
+    margin-left: 280px;
+    border-left: 1px #fff;
+    padding: 1em;
+}
+
+h1{
+	float: center;
+	font: 80px Agency FB;
+}
+
+/* ====================================
+Picture
+==================================== */
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: 300px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background: #FFCAA4;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+
+/* ====================================
+Table
+==================================== */
+table, th, td {
+    height: 300px;
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 100px;
+}
